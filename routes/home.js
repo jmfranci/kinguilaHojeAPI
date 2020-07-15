@@ -23,14 +23,16 @@ getExchangeRate = (cb) => {
     await page.screenshot({ path: "example.png" });
     await browser.close();
 
-    cb({ EUR: euro, USD: dollar });
+    const payload = { EUR: euro, USD: dollar };
+
+    cb(payload);
   })();
 };
 
+getExchangeRate((rates) => log(rates));
+
 router.get("/", (req, res) => {
-  getExchangeRate((rates) => {
-    res.json.send(rates);
-  });
+  res.send("Ola");
 });
 
 module.exports = router;
