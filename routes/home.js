@@ -29,8 +29,10 @@ getExchangeRate = (cb) => {
   })();
 };
 
+getExchangeRate((rates) => log(rates));
+
 router.get("/", (req, res) => {
-  getExchangeRate((rates) => log(rates));
+  res.send("Ola");
 });
 
 module.exports = router;
