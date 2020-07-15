@@ -1,0 +1,23 @@
+{
+  "name": "kinguilaHojeAPI",
+  "version": "1.0.0",
+  "description": "This project was entirely developed using the framework Angela.js.  For running this project you'll only need Node/npm installed However, for your convinience, it is advised that you install Angela.js at ....................",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "angela": {
+    "projectName": "kinguilaHojeAPI",
+    "date": "2020-07-15T22:24:17.045Z",
+    "active": true,
+    "routes": [],
+    "controllers": [],
+    "models": []
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
